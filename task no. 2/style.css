@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html{
+      background-color: #f4f7f7;
+  }
+  
+  hr {
+      height: 10px;
+      background-color: rgb(230, 240, 240);
+  }
+  
+  h1{
+      text-align: center;
+      color: #0c0c0c;
+      height: 50px;
+      font-size: 50px;
+      padding: 35px;
+  }
+  
+  .wrapper {
+    display: grid;
+    height: 600px;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4px;
+
+  }
+  
+  .container {
+    width: 425px;
+    height: 600px;
+    border: 2px solid rgb(232, 227, 227);
+    border-radius: 10px;
+    background-color: #f7f6f6;
+    margin: 0 auto;
+    padding: auto;
+    box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 2);
+  }
+  
+  .inputArea {
+    background-color: #edeaea;
+    grid-column: 1/2;
+    display: block;
+  }
+  
+  input[type="text"] {
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-right: 38px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    background-color: rgb(232, 225, 225);
+    text-align: right;
+    border: 2px solid rgb(28, 27, 27);
+    border-radius: 8px;
+  }
+
+  input[type="text"]:disabled {
+    color:#000000;
+  }
+  
+  .btnr1 {
+    background: #181818;
+    text-align: center;
+    width: 102px;
+  }
+  
+  .btnr2 {
+    background: #141414;
+    text-align: center;
+    width: 102px;
+  }
+  
+  .btnr1 > input {
+    background: transparent;
+    border: none;
+    justify-content: center;
+    align-self: end;
+    color: rgb(207, 202, 202);
+    font-size: 2.5em;
+    margin-top: 25px;
+  }
+  
+  .btnr2 > input {
+    background: transparent;
+    border: none;
+    justify-content: center;
+    align-self: end;
+    color: rgb(237, 225, 225);
+    font-size: 3em;
+    margin-top: 30px;
+  }
+  
+  .btnC > input {
+    color: #e9150e !important;
+  }
+
+  body{
+    width: 100%;
+    height: 100vh;
+    background: url(https://imgs.search.brave.com/KnQ2WQ3NbNesIfCc6LzjRV0zXWqULchAEwd5X7JZ0QI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDI0OTc1/MDUuanBn)no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
